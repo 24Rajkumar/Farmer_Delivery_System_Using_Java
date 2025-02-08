@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Delivery System</title>
+  <link rel="stylesheet" type="text/css" href="../css/fds.css">
+  <!--  <link rel="stylesheet" th:href="@{/css/fds.css}">-->
+  <script src="https://kit.fontawesome.com/e7938b2479.js" crossorigin="anonymous"></script>
+  <style>
+    .home{
+      background-image: url('/images/bgimage.webp');
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+
+    }
+  </style>
+</head>
+<body>
+
+
+
+<!--header section-->
+<header>
+<!--  <input type="checkbox" name="" id="toggler">-->
+<!--  <label for="toggler" class="fas fa-bars"></label>-->
+
+  <a href="#" class="logo">Farmer Delivery System</a>
+  <nav class="navbar">
+    <a href="#h">Home</a>
+    <a href="#a">About</a>
+    <a href="#p">Product</a>
+    <a href="#r">Review</a>
+    <a href="#c">Contact</a>
+  </nav>
+
+  <!--<button class="button"><a href="https://curious-toffee-30104e.netlify.app/">Login</a></button> -->
+
+  <div class="icons">
+    <a href="#" class="fas fa-heart"></a>
+    <h4>favorites</h4>
+  </div>
+
+  <br>
+
+  <div class="icons1">
+    <a href="#" class="fas fa-shopping-cart"></a>
+    <h4>cart</h4>
+  </div>
+
+  <br>
+
+  <div class="icons2" id="c">
+    <a href="#" class="fas fa-user"></a>
+    <h4>menu</h4>
+  </div>
+
+  <br>
+
+
+  <button class="button">
+    <a th:href="@{/login}">Login</a>
+  </button>
+
+
+  <h3>|</h3>
+  <button class="button">
+    <a th:href="@{/signin}">Signin</a>
+  </button>
+
+
+<!--  <button class="button"><a th:href="@{/login}">Login</a></button>-->
+<!--  <h3>|</h3>-->
+<!--  <button class="button"><a th:href="@{/signin}">Signin</a></button>-->
+
+</header>
+
+
+                          <!-- Button trigger modal -->
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---header section-->
+<section class="home" id="h">
+  <div class="content">
+    <h2>Fresh Harvest Direct</h2>
+    <span>Nature's Bounty Delivered to Your Doorstep</span>
+    <p>"Love is like a fruit; it thrives when nurtured."
+
+    </p>
+
+    <a href="#p" class="btn">shop now</a>
+
+  </div>
+
+</section>
+
+<!--------------------------------------------About--------------------------------->
+
+<section class="about" id="a">
+  <h1 class="heading"> <span>About us</span> <i class="fa-solid fa-arrow-turn-down"></i></h1>
+  <div class="row">
+    <div class="video-container">
+      <video controls autoplay src="/videos/introfds.mp4"  type="video/mp4" >  not supported</video>
+
+    </div>
+    <div class="content">
+      <h3>why choose us?</h3>
+      <p>Our fruits are grown without harmful pesticides, ensuring sustainable
+        farming practices.Cultivated with care to preserve the environment,
+        respecting nature's balance.Enjoy the harmony of our orchards, where
+        fruits grow in the presence of buzzing bees and natural insect deterrents.Experience the essence of nature with every delivery. Grow love with Fresh Harvest Direct.</p>
+      <a href="#" class="btn">learn more</a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!--------------------------------------------icons------------------------------------------------------------>
+
+
+<section class="icons-container">
+
+  <div class="icons">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi6-znAuLP8hz0zzzaUZOC9xGGLqsjNyIOmw&usqp=CAU" alt="">
+    <div class="info">
+      <h3>Free delivery</h3>
+      <span>on all orders</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8NsbpskVsGVIb3BxcvWykzHVWLZyWf1KnGvTYe8xYjEtdfuCAmMsjdu0kTOWg7WeZjG4&usqp=CAU" alt="">
+    <div class="info">
+      <h3>10 days returns</h3>
+      <span>moneyback guarantee</span>
+    </div>
+  </div>
+
+  <div class="icons">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEN7McxbxvXSTal-bkVHHUuQ3UIrKyqo7dWA&usqp=CAU" alt="">
+    <div class="info">
+      <h3>Offer & gifts</h3>
+      <span>on all orders</span>
+    </div>
+  </div>
+  <div class="icons">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWlYhnFoUNW_HZHOzQqPK2dMHBN6k1I6P2gA&usqp=CAU" alt="">
+    <div class="info">
+      <h3>Secure payments</h3>
+      <span>Protected by paypal</span>
+    </div>
+  </div>
+
+</section>
+
+
+<!-------------------------------------------PRODUCTION--------------------------------------------------------------------->
+
+
+<!--Products section stars-->
+
+<section class="products" id="p">
+  <h1 class="heading">latest <span>products <i class="fa-solid fa-arrow-turn-down"></i></span></h1>
+  <div class="box-container">
+    <div class="box">
+      <span class="discount">-10%</span>
+      <div class="image">
+        <img src="\images\fruits\Apple.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Apple</h3>
+        <div class="price">₹135  <span>$150</span></div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <span class="discount">-15%</span>
+      <div class="image">
+        <img src="\images\fruits\guava.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Guava</h3>
+        <div class="price">₹50 <span>₹58</span></div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <span class="discount">-5%</span>
+      <div class="image">
+        <img src="\images\fruits\Banana.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Banana</h3>
+        <div class="price">₹50 <span>₹53</span></div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <span class="discount">-20%</span>
+      <div class="image">
+        <img src="\images\fruits\Pineapple.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Pine apple</h3>
+        <div class="price">₹100 <span>₹120</span></div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <span class="discount">-17%</span>
+      <div class="image">
+        <img src="\images\fruits\grapes.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Grapes</h3>
+        <div class="price">₹100 <span>₹125</span></div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <span class="discount">-3%</span>
+      <div class="image">
+        <img src="\images\vegtables\bitter gourd.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>Bitter gourd</h3>
+        <div class="price">₹80<span>₹85</span></div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <span class="discount">-18%</span>
+      <div class="image">
+        <img src="\images\vegtables\ladysfinger.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>lady'sfinger</h3>
+        <div class="price">₹80 per kg <span>₹92</span></div>
+      </div>
+    </div>
+
+
+
+
+    <div class="box">
+      <span class="discount">-10%</span>
+      <div class="image">
+        <img src="\images\vegtables\tomato.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div>
+      <div class="content">
+        <h3>tomato</h3>
+        <div class="price">₹40 per kg <span>₹42</span></div>
+      </div>
+    </div>
+
+
+
+    <div class="box">
+      <span class="discount">-5%</span>
+      <div class="image">
+        <img src="\images\vegtables\green mirchi.jfif" alt="">
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="cart-btn">add to cart</a>
+          <a href="#" class="fas fa-share"></a>
+        </div>
+      </div><
+      <div class="content">
+        <h3>green mirchi</h3>
+        <div class="price">₹100 per kg <span>₹105</span></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>
+</html>
